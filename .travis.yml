@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: 4nhthp0Ka3e6cv9b1NIpFv6Hcab1h0dofnmKifeW4E7zZS7X535bX4XzXpQkbkpKc2xxvj+NTQGznGyfvxurEHrsuMsPxc4/Ntj2nAPYo08VlPPOeJlwMw1jiMtgBEBX+uKt7+FIP6KLaCyv6dsW512Zavp93UesOW5nUoi09n+IKKApgvYQa+4UySab1yCzKLXuqBD9fPPu/3ooUi6OLzs6LBWBRmhMtS2ZtvwgKCXJ+YAfzAiwa17JhOySmIFEeMfkEcO5Cv5wINdz02LtkZ01bqsFQayeVHShd3sXTbzv5gMiWl9pWOENHMu6kGWUKZLy8Ou0jyupyfgXzX2+G8LOypHUQPlSMQ3ScokP6TyZ3Yn2am6LjnZT1fsifG1+fIIbQvfTOuBUtz+5ZcLA+cjxI2VmUoQ7h6+QhM8X/QLggF19Vrze8RKOW8yN1KtT5hQFeXEqycLAgPJQjd+f4vHWgiUoMajSc+NxYCV94PhjdYK19YeLHwiJTCv8MD+VHDR+zvXX0B+JfZAcaeXGpHcvrix7yvdS2t/QZahKvxdHgJo10G2dsT53md9bMj4uY/nt2lvB0bfuuknceS/V3doohtBaoFyfMj67UScuzNU+DWYL0GJX6DSoZ94pDukkMUNn7oviSavykz4TpTF/EfRwVtps4i6qp8JFh0w3BD0=
+  app: fierce-forest-69370
+  on:
+    repo: TheGaff87/react-trello-testing
